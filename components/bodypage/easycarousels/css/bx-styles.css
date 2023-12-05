@@ -1,0 +1,48 @@
+/* color schemes */
+.easycarousels .bx-wrapper .bx-controls-direction a {
+  margin-top: 0; }
+
+.easycarousels .bx-wrapper .bx-controls-direction a:before {
+  display: none; }
+
+.n-hover .bx-wrapper .bx-controls-direction {
+  display: none; }
+
+.n-hover .bx-wrapper:hover .bx-controls-direction {
+  display: block; }
+
+.easycarousels .bx-controls.bx-has-pager {
+  margin-bottom: 25px; }
+
+.easycarousels .bx-wrapper .bx-pager.bx-default-pager a.bx-pager-link {
+  width: 12px;
+  height: 12px;
+  border: 2px solid #333333;
+  background: white;
+  border-radius: 100%; }
+
+.easycarousels .bx-wrapper .bx-pager.bx-default-pager a.bx-pager-link:hover,
+.easycarousels .bx-wrapper .bx-pager.bx-default-pager a.bx-pager-link.active {
+  background: #333333; }
+
+/* nav in column for one_by_one */
+.column .easycarousels .one_by_one .bx-wrapper .bx-controls-direction {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  text-align: center; }
+
+.column .easycarousels .bx-wrapper .bx-controls-direction > a {
+  position: static;
+  display: inline-block; }
+
+.column .easycarousels .bx-viewport {
+  padding-top: 68px; }
+
+.column h2.title_main_section {
+  font-size: 16px;
+  text-align: left;
+  font-weight: bold; }
+
+/*# sourceMappingURL=bx-styles.css.map */

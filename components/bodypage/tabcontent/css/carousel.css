@@ -1,0 +1,81 @@
+/* color schemes */
+.bx-wrapper {
+  position: relative;
+  max-width: 100%; }
+  .bx-wrapper .bx-controls-direction a:before {
+    font-family: fontello !important; }
+
+.easycarousels .bx-wrapper .bx-controls-direction a {
+  position: absolute;
+  top: 37%;
+  right: 22px;
+  border: 1px solid transparent;
+  height: 35px;
+  width: 35px;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg); }
+  .easycarousels .bx-wrapper .bx-controls-direction a.bx-prev {
+    right: auto;
+    border-right-color: #4f4f4f;
+    border-bottom-color: #4f4f4f; }
+  .easycarousels .bx-wrapper .bx-controls-direction a.bx-next {
+    border-left-color: #4f4f4f;
+    border-top-color: #4f4f4f; }
+  .easycarousels .bx-wrapper .bx-controls-direction a.bx-prev:hover {
+    border-right-color: #db7100;
+    border-bottom-color: #db7100; }
+  .easycarousels .bx-wrapper .bx-controls-direction a.bx-next:hover {
+    border-left-color: #db7100;
+    border-top-color: #db7100; }
+
+.tab-content > .tab-pane {
+  display: none !important;
+  position: relative;
+  margin: 0;
+  /*padding: 0 40px;*/ }
+.tab-content .active {
+  display: block !important; }
+
+.tabs_main {
+  clear: both;
+  margin-top: 105px; }
+
+.easycarousels .bx-wrapper .bx-controls-direction.bx-prev {
+  left: -30px; }
+.easycarousels .bx-wrapper .bx-controls-direction.bx-next {
+  right: -30px; }
+.easycarousels .one_by_one {
+  padding: 0 40px; }
+
+@media (min-width: 1200px) {
+  .tab-content > .tab-pane,
+  .easycarousels .one_by_one {
+    padding: 0; } }
+@media (min-width: 769px) and (max-width: 1199px) {
+  .easycarousels .bx-wrapper .bx-controls-direction a {
+    top: 34%; } }
+@media (max-width: 768px) {
+  .tabs_main {
+    margin-top: 0; } }
+@media (max-width: 480px) {
+  .tab-content > .tab-pane {
+    padding: 0; }
+
+  .easycarousels .bx-wrapper .bx-controls-direction a.bx-next {
+    right: 21px; }
+  .easycarousels .bx-wrapper .bx-controls-direction a.bx-prev {
+    left: 21px; }
+  .easycarousels .one_by_one {
+    padding: 0; } }
+@media (max-width: 480px) {
+  .easycarousels .bx-wrapper .bx-controls-direction a {
+    width: 30px;
+    height: 30px; } }
+/* fix double arrows*/
+.bx-viewport:first-child .bx-controls {
+  display: none !important; }
+
+/*# sourceMappingURL=carousel.css.map */

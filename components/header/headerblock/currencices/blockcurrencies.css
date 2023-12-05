@@ -1,0 +1,100 @@
+/* color schemes */
+#currencies-block-top {
+  position: relative;
+  float: left;
+  padding-right: 15px;
+  z-index: 2;
+  text-align: left; }
+  #currencies-block-top label {
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
+    white-space: nowrap; }
+
+#currencies-block-top .current {
+  cursor: pointer;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  font-size: 12px;
+  color: white;
+  white-space: nowrap; }
+
+#currencies-block-top .current i {
+  font-size: 12px;
+  padding-left: 5px;
+  line-height: 12px; }
+
+#first-currencies {
+  background-color: transparent;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: auto;
+  white-space: nowrap;
+  margin-top: 5px;
+  z-index: 2;
+  padding: 10px;
+  overflow: hidden;
+  overflow-y: auto;
+  visibility: hidden;
+  transition: visibility 0s linear 1s, background 0.35s linear; }
+
+#first-currencies li {
+  line-height: 1.1;
+  font-size: 12px;
+  opacity: 0;
+  transform: scale(1.1) translateY(-24px);
+  transition: opacity 0.35s ease-out, transform 0.35s ease-out; }
+  #first-currencies li.selected {
+    display: none; }
+
+#first-currencies li:not(:last-child) {
+  margin-bottom: 15px; }
+
+#currencies-block-top li a,
+#currencies-block-topli > span {
+  display: block;
+  color: white; }
+
+#currencies-block-top li a:hover {
+  color: #ff8400; }
+
+.iso_curr {
+  text-transform: uppercase; }
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+  #currencies-block-top {
+    width: 12%; } }
+@media (max-width: 1024px) {
+  .cur-label {
+    display: none; }
+
+  #currencies-block-top {
+    line-height: inherit;
+    top: 48px;
+    position: absolute;
+    left: 70px; }
+    #currencies-block-top #first-currencies {
+      margin-top: 0; }
+
+  span.iso_curr {
+    line-height: inherit; } }
+#state-curr:checked ~ #first-currencies {
+  visibility: visible;
+  transition-delay: 0s;
+  background: rgba(0, 0, 0, 0.8); }
+  #state-curr:checked ~ #first-currencies li {
+    opacity: 1;
+    pointer-events: auto;
+    transform: none; }
+
+#state-curr:target ~ #first-currencies {
+  visibility: visible;
+  transition-delay: 0s;
+  background: rgba(0, 0, 0, 0.8); }
+  #state-curr:target ~ #first-currencies li {
+    opacity: 1;
+    pointer-events: auto;
+    transform: none; }
+
+/*# sourceMappingURL=blockcurrencies.css.map */

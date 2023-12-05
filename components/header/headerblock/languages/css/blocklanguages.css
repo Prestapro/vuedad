@@ -1,0 +1,114 @@
+/* color schemes */
+#languages-block-top {
+  float: left;
+  position: relative;
+  padding-left: 30px;
+  text-align: left;
+  z-index: 2; }
+  #languages-block-top label {
+    color: inherit;
+    padding: 0;
+    cursor: pointer;
+    white-space: nowrap; }
+
+#languages-block-top span.firstWord {
+  display: none; }
+
+#languages-block-top .current {
+  cursor: pointer;
+  color: white;
+  white-space: nowrap;
+  font-size: 12px; }
+
+#languages-block-top .current strong {
+  color: #787878; }
+
+#languages-block-top .current i {
+  font-size: 12px;
+  line-height: 12px;
+  padding-left: 5px; }
+
+#first-languages {
+  background-color: transparent;
+  position: absolute;
+  top: 100%;
+  left: 30px;
+  margin-top: 5px;
+  width: auto;
+  white-space: nowrap;
+  z-index: 2;
+  padding: 10px;
+  overflow: hidden;
+  overflow-y: auto;
+  visibility: hidden;
+  transition: visibility 0s linear 1s, background 0.35s linear; }
+  @media (max-width: 1024px) {
+    #first-languages {
+      left: 13px; } }
+
+#first-languages li {
+  color: white;
+  line-height: 1.1;
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0;
+  transform: scale(1.1) translateY(-24px);
+  transition: opacity 0.35s ease-out, transform 0.35s ease-out; }
+  #first-languages li.selected {
+    display: none; }
+
+#languages-block-top li a,
+#languages-block-top li > span {
+  color: white;
+  display: block;
+  padding: 0 0 0 25px;
+  position: relative; }
+
+#first-languages li:not(:last-child) {
+  margin-bottom: 15px; }
+
+#languages-block-top li a:hover {
+  color: #ff8400; }
+
+#languages-block-top li img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block; }
+
+.iso_lang {
+  text-transform: uppercase; }
+
+@media (min-width: 1025px) and (max-width: 1199px) {
+  #languages-block-top {
+    width: 12%; } }
+@media (max-width: 1024px) {
+  .cur-label {
+    display: none; }
+
+  #languages-block-top {
+    padding-left: 13px;
+    left: 0;
+    top: 48px;
+    position: absolute; }
+    #languages-block-top #first-languages {
+      margin-top: 0; } }
+#state-lang:checked ~ #first-languages {
+  visibility: visible;
+  transition-delay: 0s;
+  background: rgba(0, 0, 0, 0.8); }
+  #state-lang:checked ~ #first-languages li {
+    opacity: 1;
+    pointer-events: auto;
+    transform: none; }
+
+#state-lang:target ~ #first-languages {
+  visibility: visible;
+  transition-delay: 0s;
+  background: rgba(0, 0, 0, 0.8); }
+  #state-lang:target ~ #first-languages li {
+    opacity: 1;
+    pointer-events: auto;
+    transform: none; }
+
+/*# sourceMappingURL=blocklanguages.css.map */

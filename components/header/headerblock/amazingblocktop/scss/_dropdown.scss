@@ -1,0 +1,99 @@
+.wrapper-result{
+	background: #ffffff;
+}
+.amazingsearch_result{
+	background: #ffffff;
+	color: #000000;
+	border-top: 1px solid #e9e9e9;
+	display: none;
+	.products_list{
+		white-space: normal;
+	}
+	.item{
+		background: #ffffff;
+		border-bottom: 1px solid #f0f2f3;
+		position: relative;
+		text-align: left;
+		&:hover{
+			background: #f5f9fc;
+		}
+		> a{
+			display: block;
+			padding: 10px 0 10px 55px;
+			position: relative;
+			max-width: 100%;
+			overflow: hidden;
+		}
+		h5 {
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 1;
+			margin: 0 0 5px;
+			text-transform: capitalize;
+		}
+		.desc{
+			color: #888888;
+			font-style: italic;
+			font-size: 9px;
+			line-height: 1.4;
+		}
+	}
+	img{
+		left: 0;
+		position: absolute;
+		top: 7px;
+		width: 40px;
+	}
+	.all-wrapper{
+		clear: both;
+		padding: 19px 15px;
+		font-size: 13px;
+	}
+	.all{
+		background: #ffffff;
+		cursor: pointer;
+		&:hover{
+			background: #f5f9fc;
+		}
+	}
+}
+.wrapper-close{
+	background: $theme-color-one;
+	color: $white;
+	cursor: pointer;
+	padding: 24px 0;
+	text-align: center;
+	display: none;
+	&:hover{
+		background: lighten($theme-color-one, 8%);
+	}
+	&:active{
+		background: darken($theme-color-one, 10%);
+	}
+}
+.open {
+	+ .wrapper-close{
+		display: block;
+	}
+}
+.search-close{
+	font-size: 12px;
+	text-transform: uppercase;
+}
+@media (min-width: 1025px){
+	.wrapper-result{
+		position: absolute;
+		left: 0;
+		margin-top: 12px;
+		right: 0;
+		top: 100%;
+		max-height: calc(100vh - 50px);
+		overflow-y: auto;
+	}
+}
+@media (max-width: 1024px){
+	.wrapper-result{
+		position: relative;
+		margin: 6px -40px 0 -10px;
+	}
+}

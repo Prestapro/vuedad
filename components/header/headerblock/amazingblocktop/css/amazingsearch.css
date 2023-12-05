@@ -1,0 +1,346 @@
+/* color schemes */
+.wrapper-result {
+  background: #ffffff; }
+
+.amazingsearch_result {
+  background: #ffffff;
+  color: #000000;
+  border-top: 1px solid #e9e9e9;
+  display: none; }
+  .amazingsearch_result .products_list {
+    white-space: normal; }
+  .amazingsearch_result .item {
+    background: #ffffff;
+    border-bottom: 1px solid #f0f2f3;
+    position: relative;
+    text-align: left; }
+    .amazingsearch_result .item:hover {
+      background: #f5f9fc; }
+    .amazingsearch_result .item > a {
+      display: block;
+      padding: 10px 0 10px 55px;
+      position: relative;
+      max-width: 100%;
+      overflow: hidden; }
+    .amazingsearch_result .item h5 {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 1;
+      margin: 0 0 5px;
+      text-transform: capitalize; }
+    .amazingsearch_result .item .desc {
+      color: #888888;
+      font-style: italic;
+      font-size: 9px;
+      line-height: 1.4; }
+  .amazingsearch_result img {
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 40px; }
+  .amazingsearch_result .all-wrapper {
+    clear: both;
+    padding: 19px 15px;
+    font-size: 13px; }
+  .amazingsearch_result .all {
+    background: #ffffff;
+    cursor: pointer; }
+    .amazingsearch_result .all:hover {
+      background: #f5f9fc; }
+
+.wrapper-close {
+  background: #ff8400;
+  color: white;
+  cursor: pointer;
+  padding: 24px 0;
+  text-align: center;
+  display: none; }
+  .wrapper-close:hover {
+    background: #ff9729; }
+  .wrapper-close:active {
+    background: #cc6900; }
+
+.open + .wrapper-close {
+  display: block; }
+
+.search-close {
+  font-size: 12px;
+  text-transform: uppercase; }
+
+@media (min-width: 1025px) {
+  .wrapper-result {
+    position: absolute;
+    left: 0;
+    margin-top: 12px;
+    right: 0;
+    top: 100%;
+    max-height: calc(100vh - 50px);
+    overflow-y: auto; } }
+@media (max-width: 1024px) {
+  .wrapper-result {
+    position: relative;
+    margin: 6px -40px 0 -10px; } }
+@media (min-width: 1025px) {
+  #searchbox:before,
+  #searchbox:after {
+    content: '';
+    display: block;
+    height: 12px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    border-left: 1px solid white; }
+
+  .amazing-search {
+    color: white;
+    font-size: 12px;
+    float: left;
+    line-height: 2;
+    position: relative;
+    padding-top: 13px; }
+
+  #searchbox:after {
+    left: auto;
+    right: 0; }
+
+  #searchbox {
+    white-space: nowrap;
+    padding: 0 10px;
+    position: relative; }
+
+  .button-search:before {
+    display: block;
+    font-size: 17px;
+    text-align: center; }
+
+  .amazing-search .search_query {
+    display: inline-block;
+    max-width: calc(100% - 145px) !important;
+    width: 100%;
+    padding: 0 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 0 0px 0 white;
+    -moz-box-shadow: 0 0 0px 0 white;
+    box-shadow: 0 0 0px 0 white;
+    -webkit-transition: -moz-box-shadow .5s;
+    transition: box-shadow .5s; }
+
+  .search_query:focus {
+    -webkit-box-shadow: 0 0 10px 0 white;
+    -moz-box-shadow: 0 0 10px 0 white;
+    box-shadow: 0 0 10px 0 white; }
+
+  .button-search {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    line-height: 1; }
+
+  .search_query,
+  .button-search {
+    background: none;
+    border: none;
+    outline: none;
+    color: white; } }
+.search_query::-webkit-input-placeholder {
+  color: white; }
+
+.search_query::-moz-placeholder {
+  color: white; }
+
+/* Firefox 19+ */
+.search_query:-moz-placeholder {
+  color: white; }
+
+/* Firefox 18- */
+.search_query:-ms-input-placeholder {
+  color: white; }
+
+.amazing-search .styled-select,
+.amazing-search select {
+  display: inline-block;
+  width: 140px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.amazing-search .styled-select select {
+  display: none; }
+
+.amazing-search .styled-select dt.option {
+  color: white;
+  border: none;
+  background: none; }
+.amazing-search .styled-select .option {
+  color: #333333; }
+  .amazing-search .styled-select .option:hover {
+    color: white; }
+.amazing-search select {
+  background: none;
+  border: none;
+  color: inherit; }
+.amazing-search option {
+  color: #333333; }
+
+@media (max-width: 1199px) and (min-width: 1025px) {
+  .amazing-search {
+    width: 42%; } }
+.amazing-search .styled-select ul {
+  margin-top: 17px;
+  background: #ff8400;
+  border: none; }
+
+.amazing-search .styled-select .option {
+  background: none;
+  color: white; }
+
+.amazing-search .styled-select:not(.mobile) .option:hover {
+  background: #d16e05; }
+
+.amazing-search .styled-select li:not(:last-child) {
+  border-bottom-color: #d16e05; }
+
+.amazing-search .btnfake {
+  color: inherit;
+  display: block;
+  padding: 0;
+  position: absolute;
+  right: 37px;
+  width: 40px;
+  height: 34px;
+  transition: transform 0.25s cubic-bezier(0.4, 0.01, 0.165, 0.99);
+  z-index: 5; }
+  .amazing-search .btnfake:before {
+    display: block;
+    z-index: 1;
+    transition: transform .2s; }
+  .amazing-search .btnfake:after {
+    opacity: 0;
+    content: '';
+    display: block;
+    width: 17px;
+    height: 1px;
+    background: white;
+    position: absolute;
+    left: 12px;
+    bottom: 23px;
+    top: 23px;
+    transition: transform 0.2s 0.2s;
+    transform: translateY(3px);
+    z-index: 1; }
+  @media (min-width: 1025px) {
+    .amazing-search .btnfake {
+      display: none; } }
+
+@media (max-width: 1024px) {
+  .amazing-search {
+    float: right;
+    text-align: left;
+    width: 70px;
+    color: white;
+    line-height: 36px;
+    z-index: 6;
+    transition: width .4s linear;
+    overflow: hidden;
+    margin-top: 6px;
+    padding: 0 40px 0 10px; }
+    .amazing-search .styled-select,
+    .amazing-search select {
+      position: absolute;
+      right: 31px;
+      bottom: 0;
+      top: 0;
+      outline: none; }
+    .amazing-search .styled-select dt.option {
+      line-height: inherit;
+      padding: 0; }
+    .amazing-search .styled-select .dl i.toggle {
+      margin: 0; }
+    .amazing-search .search_query {
+      border: none;
+      background: #555555;
+      border-radius: 5px;
+      padding: 0 0 0 38px;
+      font-size: 14px;
+      width: 100%;
+      height: 36px;
+      outline: none;
+      color: #fff; }
+    .amazing-search .button-search {
+      background: none;
+      border: none;
+      padding: 0;
+      position: absolute;
+      left: 10px;
+      top: 0;
+      height: 17px;
+      bottom: 0;
+      color: inherit;
+      font-size: 16px;
+      line-height: 1;
+      margin: auto 0; }
+
+  #searchbox {
+    position: relative;
+    opacity: 0;
+    transition: opacity .4s linear; }
+
+  #state-search:checked ~ .amazing-search {
+    width: 100%;
+    overflow: visible; }
+    #state-search:checked ~ .amazing-search #searchbox {
+      opacity: 1; }
+    #state-search:checked ~ .amazing-search .search_query {
+      padding-right: 172px; }
+    #state-search:checked ~ .amazing-search .btnfake {
+      transform: rotate(90deg); }
+      #state-search:checked ~ .amazing-search .btnfake:before {
+        width: 17px;
+        height: 1px;
+        background: white;
+        position: absolute;
+        content: '';
+        left: 12px;
+        top: 18px;
+        transform: rotate(-45deg) translateY(3px); }
+      #state-search:checked ~ .amazing-search .btnfake:after {
+        opacity: 1;
+        transform: rotate(45deg) translateY(-3px); }
+
+  #state-user:target ~ .amazing-search {
+    width: 100%;
+    overflow: visible; }
+    #state-user:target ~ .amazing-search #searchbox {
+      opacity: 1; }
+    #state-user:target ~ .amazing-search .search_query {
+      padding-right: 172px; }
+    #state-user:target ~ .amazing-search .btnfake {
+      transform: rotate(90deg); }
+      #state-user:target ~ .amazing-search .btnfake:before {
+        width: 17px;
+        height: 1px;
+        background: white;
+        position: absolute;
+        content: '';
+        left: 12px;
+        top: 18px;
+        transform: rotate(-45deg) translateY(3px); }
+      #state-user:target ~ .amazing-search .btnfake:after {
+        opacity: 1;
+        transform: rotate(45deg) translateY(-3px); }
+
+  .search-drop-active .amazing-search {
+    z-index: 11; } }
+@media (max-width: 480px) {
+  .amazing-search .styled-select,
+  .amazing-search select {
+    width: 80px;
+    line-height: 36px; }
+
+  #state-search:checked ~ .amazing-search .search_query {
+    padding-right: 109px; } }
+
+/*# sourceMappingURL=amazingsearch.css.map */

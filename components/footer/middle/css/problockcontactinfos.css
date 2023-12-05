@@ -1,0 +1,87 @@
+/* color schemes */
+#block_contact_infos .title_main_section {
+  font-weight: bold; }
+
+.title_contacts_over {
+  padding: 0 0 25px;
+  text-align: left;
+  margin: 0; }
+
+.undertitle_main .title_contacts_over {
+  margin-bottom: 38px; }
+  @media (max-width: 1199px) {
+    .undertitle_main .title_contacts_over {
+      margin-bottom: 28px; } }
+
+.pro-block-contacts {
+  float: left;
+  width: 36%;
+  padding: 45px 0 0 30px;
+  overflow: hidden;
+  font-family: 'latoregular', 'Open Sans'; }
+  .pro-block-contacts ul {
+    margin-top: 28px; }
+    @media (max-width: 1199px) {
+      .pro-block-contacts ul {
+        margin-top: 15px; } }
+    .pro-block-contacts ul .address_item {
+      width: 220px; }
+    .pro-block-contacts ul li {
+      color: #3f474a;
+      line-height: 1.8;
+      margin-bottom: 25px; }
+      @media (max-width: 1199px) {
+        .pro-block-contacts ul li {
+          margin-bottom: 10px; } }
+      .pro-block-contacts ul li .title_contact_item {
+        font-weight: 600;
+        display: block;
+        color: #171717;
+        position: relative;
+        padding-left: 36px; }
+      .pro-block-contacts ul li .content_item {
+        padding-left: 36px;
+        display: block; }
+      .pro-block-contacts ul li .title_contact_item:before {
+        display: inline-block;
+        color: #db7100;
+        font-size: 22px;
+        position: absolute;
+        left: 0;
+        line-height: 1; }
+    .pro-block-contacts ul p {
+      font-size: 14px;
+      color: #3f474a;
+      line-height: 1.5;
+      width: 353px; }
+    .pro-block-contacts ul .phones_item .title_contact_item:before {
+      display: inline-block; }
+  .pro-block-contacts a {
+    color: #40484b; }
+
+@media (max-width: 1199px) {
+  .pro-block-contacts {
+    padding: 15px 0 0 20px; }
+    .pro-block-contacts p {
+      width: auto; } }
+@media (max-width: 768px) {
+  .pro-block-contacts {
+    width: 100%;
+    text-align: left;
+    padding: 40px 32px 40px; }
+    .pro-block-contacts ul .address_item {
+      width: 100%; }
+    .pro-block-contacts ul li .content_item {
+      padding-left: 32px; }
+    .pro-block-contacts ul li .title_contact_item {
+      padding-left: 0; }
+    .pro-block-contacts p {
+      width: 100%;
+      line-height: 1.7;
+      margin-bottom: 55px; }
+    .pro-block-contacts ul li .title_contact_item:before {
+      position: static;
+      padding-right: 10px;
+      width: 32px; } }
+
+/*# sourceMappingURL=problockcontactinfos.css.map */

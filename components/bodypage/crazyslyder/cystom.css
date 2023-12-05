@@ -1,0 +1,62 @@
+
+.tparrows {
+  cursor: pointer;
+  background: black;
+  background: rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  display: block;
+  z-index: 1000; }
+
+.tparrows:hover {
+  background: black; }
+
+.tparrows:before {
+  font-family: "revicons";
+  font-size: 15px;
+  color: white;
+  display: block;
+  line-height: 40px;
+  text-align: center; }
+
+.tparrows.tp-leftarrow:before {
+  content: '\e824'; }
+
+.tparrows.tp-rightarrow:before {
+  content: '\e825'; }
+
+.rev_slider .tparrows.hesperiden {
+  background: none !important;
+  border: 1px solid transparent;
+  color: white;
+  height: 40px;
+  width: 40px;
+  z-index: 100;
+  cursor: pointer;
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+  -webkit-transition: border-color .5s ease-out, opacity .5s ease-out;
+  -o-transition: border-color .5s ease-out, opacity .5s ease-out;
+  -moz-transition: border-color .5s ease-out, opacity .5s ease-out;
+  transition: border-color .5s ease-out, opacity .5s ease-out;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0; }
+  .rev_slider .tparrows.hesperiden:before {
+    display: none; }
+  .rev_slider .tparrows.hesperiden.tp-leftarrow {
+    border-right-color: white;
+    border-bottom-color: white; }
+    .rev_slider .tparrows.hesperiden.tp-leftarrow:hover {
+      border-right-color: #ff8400;
+      border-bottom-color: #ff8400; }
+  .rev_slider .tparrows.hesperiden.tp-rightarrow {
+    border-left-color: white;
+    border-top-color: white; }
+    .rev_slider .tparrows.hesperiden.tp-rightarrow:hover {
+      border-left-color: #ff8400;
+      border-top-color: #ff8400; }  

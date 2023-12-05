@@ -1,0 +1,262 @@
+/* color schemes */
+/* general */
+.amazzingblog .block_content {
+  border: none !important; }
+
+.amazzingblog img {
+  display: block;
+  max-width: 100%; }
+
+.inline-block {
+  display: inline-block; }
+
+.b {
+  font-weight: bold; }
+
+.i {
+  font-style: italic; }
+
+.u {
+  text-decoration: underline; }
+
+.post-list .first-in-line {
+  clear: left; }
+
+.post-list {
+  clear: both; }
+  .post-list:after {
+    content: '';
+    display: table;
+    clear: both; }
+  .post-list .item-readmore {
+    font-size: 18px;
+    padding: 10px 35px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2; }
+
+.post-item {
+  position: relative; }
+
+.post-item-cover {
+  position: relative;
+  display: inline-block;
+  width: 100%; }
+
+.post-cover__link {
+  display: block;
+  position: relative; }
+  .post-cover__link:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.35);
+    z-index: 1; }
+
+.post-item-date div {
+  display: inline-block;
+  padding-right: 3px; }
+
+.post-item-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 20px 0;
+  min-height: 0 !important;
+  text-transform: uppercase; }
+
+.post-item-date {
+  font-style: italic; }
+
+.post-item-infos {
+  margin-top: 19px;
+  font-size: 12px; }
+  .post-item-infos i {
+    padding-right: 2px; }
+  .post-item-infos > span,
+  .post-item-infos > a {
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 15px; }
+    @media screen and (max-width: 1199px) {
+      .post-item-infos > span span,
+      .post-item-infos > a span {
+        display: none; } }
+
+.comments-num:hover span {
+  text-decoration: underline; }
+
+.post-item-content {
+  line-height: 1.7;
+  min-height: 0 !important; }
+
+.block-viewall {
+  margin: 30px 0 0; }
+
+.presentation-cover-text {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  left: 15px;
+  padding: 0 8% 0 15px;
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  z-index: 1; }
+  .presentation-cover-text .post-item-title {
+    margin-bottom: 12px; }
+    @media screen and (max-width: 1199px) {
+      .presentation-cover-text .post-item-title {
+        font-size: 55px; } }
+    @media screen and (max-width: 991px) {
+      .presentation-cover-text .post-item-title {
+        font-size: 40px; } }
+
+.main-item {
+  text-align: right; }
+  .main-item .post-item-footer {
+    margin-top: 0; }
+
+.presentation-preview {
+  cursor: pointer; }
+  .presentation-preview:not(:last-child) {
+    margin-bottom: 20px; }
+  .presentation-preview.current .presentation-preview-img {
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5; }
+  .presentation-preview .presentation-preview-img {
+    -moz-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s; }
+    .presentation-preview .presentation-preview-img:hover {
+      filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+      opacity: 0.5; }
+
+@media screen and (max-width: 768px) {
+  .all-items {
+    padding-left: 10px;
+    padding-right: 10px; }
+
+  .presentation-preview {
+    width: 50%;
+    float: left;
+    padding: 0 5px; }
+
+  .presentation-main-cover img {
+    width: 100%; } }
+@media screen and (max-width: 480px) {
+  .presentation-preview {
+    width: 100%;
+    margin-bottom: 20px; } }
+/* carousels */
+.n-hover .bx-wrapper .bx-controls-direction {
+  display: none; }
+
+.n-hover .bx-wrapper:hover .bx-controls-direction {
+  display: block; }
+
+/* fix for /bx_loader.gif 404 (Not Found) */
+.amazzingblog .bx-wrapper .bx-loading {
+  background: none; }
+
+.carousel-view .bx-wrapper .bx-pager {
+  bottom: -90px; }
+.carousel-view .post-item-wrapper {
+  margin-bottom: 10px; }
+
+.list .post-item-wrapper {
+  margin-bottom: 20px; }
+
+/* compact list */
+.post-item-wrapper {
+  line-height: 1.2;
+  margin-bottom: 25px; }
+  .post-item-wrapper:last-child {
+    margin: 0; }
+
+.post-item-title-compact {
+  margin: 0 0 3px 0;
+  font-size: 14px; }
+
+.post-item-infos-compact {
+  margin: 5px 0;
+  font-size: 12px; }
+  .post-item-infos-compact .post-item-info.date {
+    font-style: italic; }
+    .post-item-infos-compact .post-item-info.date:before {
+      font-style: normal;
+      padding-right: 6px; }
+  .post-item-infos-compact .comments-num {
+    color: #ff8400; }
+    .post-item-infos-compact .comments-num i {
+      padding-right: 3px;
+      color: #4a4a4a; }
+
+.icon-angle-right.second {
+  margin-left: -5px; }
+
+.post-item-infos.pull-right {
+  margin: 0 0 0 -10px; }
+
+.item-readmore-compact i {
+  vertical-align: middle; }
+
+.grid .post-item-wrapper {
+  margin-bottom: 20px; }
+.grid .post-content {
+  text-align: center;
+  padding: 0 25px; }
+
+@media screen and (max-width: 991px) {
+  .grid .post-item-title {
+    font-size: 16px; } }
+@media screen and (max-width: 768px) {
+  .grid .post-item-title {
+    font-size: 13px; } }
+@media screen and (max-width: 991px) {
+  .grid .post-item-content {
+    font-size: 12px; } }
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  .post-block {
+    padding: 0 25px; }
+
+  .grid .post-item-wrapper {
+    float: none;
+    display: inline-block;
+    padding: 0 5px;
+    vertical-align: top; }
+  .grid .post-content {
+    text-align: left;
+    padding: 0; } }
+@media screen and (max-width: 480px) {
+  .grid .post-content {
+    text-align: left;
+    padding: 0 25px; }
+  .grid .post-item-wrapper {
+    width: 100%;
+    padding: 0; }
+  .grid .post-item-cover img {
+    width: 100%; } }
+/* column layout */
+.column-hook .block-title h2 {
+  font: 600 18px/22px "Open Sans", sans-serif; }
+
+.column-hook .post-item-cover-compact {
+  max-width: 80px;
+  float: left;
+  margin-right: 10px; }
+  @media screen and (max-width: 991px) and (min-width: 769px) {
+    .column-hook .post-item-cover-compact {
+      float: none;
+      margin: 0 0 15px; } }
+.column-hook .post-item-title-compact {
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0 0 20px 0; }
+
+/*# sourceMappingURL=front.css.map */
